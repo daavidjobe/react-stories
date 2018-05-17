@@ -1,0 +1,19 @@
+{
+  "name": "react-stories",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook -p 4000 -c .storybook"
+  },
+  "dependencies": {
+    "@storybook/react": "^3.4.4",
+    "babel-core": "^6.26.3",
+    "css-loader": "^0.28.11",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-motion": "^0.5.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0"
+  }
+}
