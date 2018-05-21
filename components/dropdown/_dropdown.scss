@@ -1,0 +1,48 @@
+.dropdown {
+  width: 250px;
+  display: block;
+  border: 1px solid #ddd;
+  cursor: pointer;
+
+  &__trigger {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    border: 0;
+    box-shadow: 0;
+    outline: 0;
+    padding: 10px 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &:after {
+      content: '';
+      border: 1px solid #000;
+      border-top: 0;
+      border-left: 0;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      transform-origin: top right;
+      width: 5px;
+      height: 5px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+  }
+
+  &__item {
+    border-top: 1px solid #ddd;
+    padding: 10px 5px;
+    font-size: 16px;
+  }
+
+}
