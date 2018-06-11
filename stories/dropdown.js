@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { Dropdown } from '../components'
+import { Dropdown } from '../lib'
 
 storiesOf('Dropdown', module)
   .add('basic', () =>
@@ -30,4 +30,16 @@ storiesOf('Dropdown', module)
       <div label="two">two</div>
     </Dropdown>
   )
+  .add('multiple', () => (
+    <div>
+      <Dropdown title='DROPDOWN'>
+        <div label="one">one</div>
+        <div label="two">two</div>
+      </Dropdown>
+      <Dropdown title='DROPDOWN'>
+        <div label="one">one</div>
+        <div label="two">two</div>
+      </Dropdown>
+    </div>
+  ))
 
